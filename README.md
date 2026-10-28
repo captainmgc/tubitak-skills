@@ -11,15 +11,10 @@ TÜBİTAK başvuruları için yapay zekâ kodlama ajanı becerileri (Claude Code
 ## Kurulum
 
 ```bash
-# Repodaki becerileri listele
-npx skills add captainmgc/tubitak-skills --list
-
-# Claude Code'a, yalnızca bu projeye kur
-npx skills add captainmgc/tubitak-skills --skill tubitak-2209a-oneri -a claude-code
-
-# Tüm projelerde kullanmak için (kullanıcı dizinine)
-npx skills add captainmgc/tubitak-skills --skill tubitak-2209a-oneri -a claude-code -g
+npx skills add captainmgc/tubitak-skills
 ```
+
+Komut hangi ajana (Claude Code, Cursor vb.) ve nereye (bu proje / tüm projeler) kurulacağını sorar. Sorusuz kurmak için: `-a claude-code -y`, tüm projeler için ayrıca `-g`.
 
 Kurduktan sonra ajana "2209-A önerisi yazalım", "kaynakları doğrula" ya da "örnek raporlara benzet" demeniz yeterli; Claude Code'da `/tubitak-2209a-oneri` ile de çağrılır.
 
