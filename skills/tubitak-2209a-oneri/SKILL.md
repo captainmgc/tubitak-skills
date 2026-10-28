@@ -7,8 +7,6 @@ description: TÜBİTAK 2209-A araştırma önerisini yazar, sadeleştirir, kayna
 
 Fikirden teslime hazır öneri formuna: kabul almış örneklere benzeyen, sade dilli, kaynakları tek tek doğrulanmış ve TÜBİTAK form kalıbında **docx + pdf** olarak üretilmiş bir 2209-A araştırma önerisi.
 
-Gerçek bir 2026 başvurusu (YAŞA: deprem sonrası enkaz altındaki kişilerin durum bilgisini telefondan telefona aktaran sistem) hazırlanırken kullanılan yöntemden çıkarıldı.
-
 ## Ne yapar?
 
 | | |
@@ -82,14 +80,14 @@ ornek_raporlar/          kabul almış örnek öneriler (docx/pdf)
 - 1.1'in sonunda madde madde: **"Projenin özgün yönleri;"**, **"Projenin araştırma soruları;"**, **"Projenin hipotezleri;"** (H1–H5).
 - 1.2'de madde madde: **"Projenin amacı;"** (fiil + -mak, son madde "-maktır.") ve **"Projenin hedefleri;"** (sayısal, ölçülebilir: "en az %70", "saatte en fazla %2", "en az 0,6 korelasyon").
 - Literatür, örnekteki gibi sade bir tabloyla özetlenir: **Konu | Yıl | Kaynak** (yeniden eskiye). Ardından "Tablo 1'deki çalışmalar incelendiğinde şu eksikler görülmektedir:" + maddeler.
-- Yöntem: kalın kısa alt başlıklar ("**Tetikleyici:**", "**Paket yapısı:**", "**Ön çalışma ve fizibilite:**") + kısa paragraflar. Bağımsız/bağımlı değişkenler ve istatistiksel yöntemler ayrı maddelerde.
+- Yöntem: kalın kısa alt başlıklar ("**Veri toplama:**", "**Analiz:**", "**Ön çalışma ve fizibilite:**") + kısa paragraflar. Bağımsız/bağımlı değişkenler ve istatistiksel yöntemler ayrı maddelerde.
 - Her şekil metinde önce anılır ("Şekil 3'te sunulmuştur."), sonra şekil gelir, sonra "Şekil 3'te görüldüğü gibi ..." ile açıklanır.
 
 **Dil (yapay zekâ izini azaltmak için)**
 - Kısa, düz cümleler; bir cümlede tek iddia. Öğrenci ama yetkin bir dil.
 - Kaçın: uzun parantez içi ayrıntılar, noktalı virgülle zincirlenmiş listeler, "(i), (ii), (iii)" numaralandırmaları, kısaltma yığınları, kanun/plan paragraf numaralarının sıralanması, "kritik", "doğrudan örtüşmektedir", "uçtan uca", "kapsamlı" gibi süs sözcükleri, uzun tire ile cümle bağlama.
-- Teknik ayrıntı yalnızca gerekçe veriyorsa kalır (ör. "BLE yayın paketi 31 bayt olduğundan paket 26 bayttır"). Bayt tabloları, durum makineleri, standart alan eşlemeleri metne değil, gerekirse ek/teknik rapora.
-- Klinik/aşırı iddia yok: ölçemediğin şeyi vaat etme (ör. skor "klinik triyaj" değil "arama öncelik skoru"; "metre altı konum" yok). Kapsam dışı olanları 5. bölümde tek paragrafta yaz.
+- Teknik ayrıntı yalnızca gerekçe veriyorsa kalır (ör. "sensör belleği 64 KB olduğundan veri 1 dakikalık parçalar hâlinde saklanır"). Bayt tabloları, durum makineleri, standart alan eşlemeleri metne değil, gerekirse ek/teknik rapora.
+- Klinik/aşırı iddia yok: ölçemediğin şeyi vaat etme (ör. "hastalığı teşhis eder" değil "risk skorunu hesaplar"; ölçülmeyen doğruluk oranı yazılmaz). Kapsam dışı olanları 5. bölümde tek paragrafta yaz.
 - Örneklerdeki kalıplar: "Bu durum projenin motivasyonunu oluşturmaktadır.", "Proje kapsamında ... Şekil X'te sunulmuştur.", "Araştırmanın başarısına katkısı %X'tir."
 
 **Kaynaklar**
@@ -117,7 +115,7 @@ Resmî sayfalar (AFAD, SBB, Resmî Gazete, KVKK, BTK, TÜBİTAK, Android belgele
    - Çevrim içi yayın yılı ≠ sayı yılı → MINOR; künyede sayı yılı kalabilir.
    - Crossref'te sayfa/yazar eksik → MINOR ("doğrulanamadı"), hata değil.
    - Başlık yayımlandığı hâliyle yazılır (ör. "Turkey" ise "Türkiye" diye çevrilmez).
-   - Çok kelimeli soyadlarına dikkat ("Curto Pelle", "Del Valle").
+   - Çok kelimeli soyadlarına dikkat ("Van der Berg", "De La Cruz").
    - Crossref'te olmayan DOI'yi doi.org yönlendirmesiyle kontrol et (ör. 10.22037/aaem...).
 4. Alt ajan bulgularından düzeltme gerektirenleri **kendin yeniden doğrula** (MCP + curl), sonra uygula.
 5. Metin içi atıf ↔ kaynakça eşleşmesini betikle kontrol et: her kaynağa atıf var mı, atıfı olup kaynakçada olmayan var mı.
@@ -126,7 +124,7 @@ Resmî sayfalar (AFAD, SBB, Resmî Gazete, KVKK, BTK, TÜBİTAK, Android belgele
 
 ## 3. Şekiller
 
-**Tasarım dili:** düz tasarım (flat design) / düz vektör illüstrasyon, infografik tarzı. Gölge, gradyan, 3B yok; tek renk dolgular; basit ikonlar (telefon, enkaz, insan, baret, tablet, sinyal dalgası, üstü çizili baz istasyonu, pil, konum iğnesi); az yazı; renkler anlamlı (kırmızı acil, yeşil akış, mavi teknoloji). Örnek önerilerdeki stok fotoğraf/clipart yerine **kendi çizdiğimiz vektör ikonlar** (telif riski yok).
+**Tasarım dili:** düz tasarım (flat design) / düz vektör illüstrasyon, infografik tarzı. Gölge, gradyan, 3B yok; tek renk dolgular; konuya uygun basit ikonlar (insan, telefon, tablet, sinyal dalgası, belge, pil, konum iğnesi vb.); az yazı; renkler anlamlı (kırmızı acil, yeşil akış, mavi teknoloji). Örnek önerilerdeki stok fotoğraf/clipart yerine **kendi çizdiğimiz vektör ikonlar** (telif riski yok).
 
 **Beş şekil türü** (örnek önerilerdeki dağılım):
 1. Zihin haritası (XMind tarzı): siyah merkez düğüm, renkli ana dallar, soluk alt düğümler, kavisli bağlantılar → 1.1'de problem.
@@ -135,7 +133,7 @@ Resmî sayfalar (AFAD, SBB, Resmî Gazete, KVKK, BTK, TÜBİTAK, Android belgele
 4. Senaryo/sistem illüstrasyonu (sahne: zemin katmanı, bileşenler, renkli veri akış okları, kırmızı uyarı etiketleri) → Yöntem başı.
 5. Küçük resimli blok şema (2 satır yılan akışı, kalın sarı oklar, her blokta küçük çizim + başlık + "İA1 · Ay 1–2" rozeti) → Yöntem, iş adımlarıyla eşleşir.
 
-**Teknik:** Her şekil bir Python betiğiyle satır içi SVG'li HTML olarak üretilir ve headless Chrome ile 2x PNG alınır. Ortak yardımcılar `<beceri>/scripts/sekil/lib.py` içindedir (`text`, `rect`, ikonlar, `save`). `f1.py`–`f5.py` YAŞA projesinin beş şeklidir; yeni proje için bunları kopyalayıp içeriği değiştir. Çıktı klasörü çalışılan dizindeki `sekiller/` ya da `SEKIL_CIKTI` ortam değişkeni; Chrome yolu `CHROME` ortam değişkeniyle değiştirilebilir. Elle çalıştırma komutu:
+**Teknik:** Her şekil bir Python betiğiyle satır içi SVG'li HTML olarak üretilir ve headless Chrome ile 2x PNG alınır. Ortak yardımcılar `<beceri>/scripts/sekil/lib.py` içindedir (`text`, `rect`, ikonlar, `save_render`). Her şekil için proje içinde ayrı bir betik yaz (`from lib import *`, sonunda `save_render(ad, svg_govde, genişlik, yükseklik)`); `lib.py`'yi betiklerin yanına kopyala ya da `sys.path`'e ekle. Çıktı klasörü çalışılan dizindeki `sekiller/` ya da `SEKIL_CIKTI` ortam değişkeni; Chrome yolu `CHROME` ortam değişkeniyle değiştirilebilir. Elle çalıştırma komutu:
 ```
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1200,<H> --screenshot=<png> file:///<html>
 ```

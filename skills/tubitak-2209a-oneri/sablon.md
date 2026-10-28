@@ -1,6 +1,6 @@
 # 2209-A öneri iskeleti ve kalıp cümleler
 
-Kabul almış örnek önerilerden ve YAŞA 2026 öneri metninden çıkarılmıştır. Yeni projede metin `uretim/oneri_kaynak.md` dosyasına yazılır. Köşeli parantezli yerler doldurulur.
+Kabul almış örnek önerilerden çıkarılmıştır. Yeni projede metin `uretim/oneri_kaynak.md` dosyasına yazılır. Köşeli parantezli yerler doldurulur.
 
 ## ÖZET (200–300 kelime, tek paragraf)
 Problem + sayısal kanıt [n] → "Bu projenin amacı, ..." → literatürdeki eksik (tek cümle) → yöntem adımları (iş adımlarıyla aynı sırada) → sayısal başarı ölçütleri → etik/veri → çıktılar (açık kaynak, veri seti, en az 1 bildiri).

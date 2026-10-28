@@ -3,7 +3,7 @@
 
 Çalıştırma:  python <beceri>/scripts/derle.py [proje_kökü]   (varsayılan: çalışılan dizin)
 Proje kökünde gereken dosyalar:
-  proje.json              {"ad": "PROJE_2026", "anahtarlar": {"karaman": "Karaman, B.", ...}}
+  proje.json              {"ad": "PROJE_2026", "anahtarlar": {"soyad2024": "Soyad, A.", ...}}
   uretim/oneri_kaynak.md  metin; atıflar [@anahtar]
   uretim/kaynak_havuzu.md başlık satırı + boş satırla ayrılmış doğrulanmış kaynaklar
 'anahtarlar': anahtar -> kaynak_havuzu.md içindeki girdinin başı (tek girdiyle eşleşmeli)."""
