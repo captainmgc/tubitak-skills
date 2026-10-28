@@ -1,11 +1,51 @@
 ---
 name: tubitak-2209a-oneri
-description: TÜBİTAK 2209-A (Üniversite Öğrencileri Araştırma Projeleri) araştırma önerisi yazma, sadeleştirme, kaynak doğrulama, şekil çizme ve TÜBİTAK form kalıbında docx/pdf üretme becerisi. Kullanıcı 2209-A, 2209-B, TÜBİTAK öneri formu, TYBS metni, araştırma önerisi, kaynak kontrolü/kaynak doğrulama, DOI kontrolü, "örnek raporlara benzet", "yapay zekâ ile yazılmış gibi duruyor, sadeleştir" veya öneri şekilleri çizme dediğinde kullan. Use for TÜBİTAK 2209-A proposal writing, reference verification via MCP, flat-design figures and docx/pdf generation.
+description: TÜBİTAK 2209-A araştırma önerisini yazar, sadeleştirir, kaynaklarını MCP ile doğrular, düz tasarım şekillerini çizer ve TÜBİTAK form kalıbında docx/pdf üretir. Kullanıcı 2209-A, 2209-B, TÜBİTAK öneri formu, TYBS metni, araştırma önerisi, kaynak kontrolü/kaynak doğrulama, DOI kontrolü, "örnek raporlara benzet", "yapay zekâ ile yazılmış gibi duruyor, sadeleştir" veya öneri şekilleri çizme dediğinde kullan. Use for TÜBİTAK 2209-A proposal writing, reference verification via MCP, flat-design figures and docx/pdf generation.
 ---
 
 # TÜBİTAK 2209-A Araştırma Önerisi Hazırlama
 
-Bu beceri, bir 2209-A başvurusu (YAŞA, 2026) hazırlanırken izlenen yöntemi tarif eder. Amaç, **kabul almış örnek önerilere benzeyen**, kısa, maddeli, kaynakları tek tek doğrulanmış ve TÜBİTAK form kalıbında üretilmiş bir öneri çıkarmaktır.
+Fikirden teslime hazır öneri formuna: kabul almış örneklere benzeyen, sade dilli, kaynakları tek tek doğrulanmış ve TÜBİTAK form kalıbında **docx + pdf** olarak üretilmiş bir 2209-A araştırma önerisi.
+
+Gerçek bir 2026 başvurusu (YAŞA: deprem sonrası enkaz altındaki kişilerin durum bilgisini telefondan telefona aktaran sistem) hazırlanırken kullanılan yöntemden çıkarıldı.
+
+## Ne yapar?
+
+| | |
+|---|---|
+| ✍️ **Yazım** | Özet, 1.1–6 bölümlerini 2026 TYBS sırasıyla yazar; maddeli amaç/hedef/hipotez, "Konu \| Yıl \| Kaynak" literatür tablosu, puanları 100'e tamamlanan çalışma takvimi |
+| 🧹 **Sadeleştirme** | "Yapay zekâ yazmış gibi" duran metni kısa, düz cümlelere indirir; süs sözcüklerini ve abartılı iddiaları ayıklar |
+| 🔎 **Kaynak doğrulama** | Her DOI'yi MCP sunucularıyla (Crossref, OpenAlex, PubMed, arXiv, Semantic Scholar) kontrol eder; başlık, yazar, yıl, cilt, sayfa farklarını raporlar; tıklanabilir DOI listesi üretir |
+| 🎨 **Şekiller** | Düz tasarım (flat design) vektör şekiller: zihin haritası, veri grafiği, ikonlu süreç, sistem sahnesi, iş adımı blok şeması (telif riski yok) |
+| 📄 **Form çıktısı** | Markdown metinden TÜBİTAK 2209-A form kalıbında docx (Arial 9, çerçeveli bölümler, tablolar, EK-1 kaynakça) ve Word ile pdf |
+| ✅ **Son kontrol** | Kelime/karakter sınırları, takvim puanı, 12.000 TL bütçe sınırı, ÜYZ beyanı, atıf–kaynakça eşleşmesi |
+
+## Kurulum
+
+```bash
+npx skills add captainmgc/tubitak-skills
+```
+
+## Örnek istekler
+
+- "2209-A önerimi bu fikirle yazalım: ..."
+- "Kaynaklarımı MCP ile doğrula, hatalı DOI var mı?"
+- "Metin yapay zekâ yazmış gibi duruyor, örnek raporlara benzet."
+- "Yöntem bölümü için sistem şeklini çiz."
+- "Önerinin docx ve pdf hâlini üret."
+
+## Gereksinimler
+
+- Python 3 + `pip install python-docx`, Google Chrome (şekiller)
+- PDF için Windows + Microsoft Word
+- Kaynak doğrulama için MCP sunucuları: paper-search-mcp, arxiv-mcp-server, semantic-scholar-mcp (kurulum komutları aşağıda, bölüm 2)
+- Kabul almış örnek öneriler ve TÜBİTAK logosu dahil değildir; projenize kendiniz eklersiniz.
+
+> Kaynakların ve metnin doğruluğundan başvuru sahibi sorumludur (TÜBİTAK ÜYZ rehberi). Çağrı kuralları her yıl değişir; güncel duyuruyu kontrol edin.
+
+---
+
+# Ajan talimatları
 
 Bölüm iskeleti ve kalıp cümleler için `sablon.md` dosyasını oku. Betikler bu becerinin `scripts/` klasöründedir (aşağıda `<beceri>` = bu SKILL.md'nin bulunduğu klasör). Kabul almış örnek öneriler beceriyle gelmez; kullanıcıdan proje içinde `ornek_raporlar/` klasörüne koymasını iste.
 
